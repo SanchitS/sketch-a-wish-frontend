@@ -5,7 +5,28 @@ body {
     /*    Standard syntax*/
 }
 
-@font a {
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url('fonts/CooperHewitt-medium.otf');
+    src: local('Cooper Hewitt medium'), local('Cooper-Hewitt-Medium'), url('fonts/CooperHewitt-Medium.otf') format('opentype');
+}
+/*bold version*/
+
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url('fonts/CooperHewitt-bolditalic.otf');
+    src: local('Cooper Hewitt Bold italic'), local('Cooper-Hewitt-Bold-Italic'), url('fonts/CooperHewitt-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'CooperHewitt';
+    src: url('fonts/CooperHewitt-SemiboldItalic.otf');
+    src: local('Cooper Hewitt Semibold Italic'), local('Cooper-Hewitt-Semibold-Italic'), url('fonts/CooperHewitt-semiboldItalic.otf') format('opentype');
+    font-weight: bold;
+}
+
+a {
     text-decoration: none !important;
 }
 
@@ -40,18 +61,23 @@ body {
     vertical-align: middle
 }
 
-#nav_SAW {
+#nav_SAW a {
     color: white !important;
-    font-size: 18px;
+    font-family: 'CooperHewitt', sans-serif;
+    font-size: 24px;
     font-weight: bold;
     padding: 0 0 0 40px;
+    font-style: italic;
 }
 
 #explore {
+    font-family: 'CooperHewitt', sans-serif;
     float: right !important;
     margin: 0 40px 0 0;
     margin color: white !important;
-    width: auto;
+    width: 117px;
+    font-size: 24px;
+    font-style: italic;
     border-width: 2px;
 }
 
@@ -69,19 +95,21 @@ section img {
     display: block;
     margin: 70px auto 30px auto !important;
     border-width: 6px;
-    font-family: cooper hewitt;
+    font-family: 'CooperHewitt', sans-serif;
     font-weight: 600;
-    font-size: 24px !important;
+    font-style: italic;
+    font-size: 32px !important;
+    width: 300px;
     text-align: center;
-    text-decoration-color: black;
 }
 
 #LandingPageSection {}
 
 .section {}
 
-.cover_name {
+.cover_name a {
     display: inline-block;
+    color: white;
 }
 
 .cover_name a img {
@@ -89,13 +117,19 @@ section img {
 }
 
 footer {
-    padding-top: 5px;
+    padding-top: 10px;
     background-color: #2B3990;
-    font-size: 1.4em;
-    min-height: 40px;
+    font-size: 1.5em;
+    min-height: 50px;
     text-align: center;
 }
 
 footer a {
     color: white;
+    font-family: 'CooperHewitt', sans-serif;
+    font-style: medium;
+}
+
+footer strong {
+    font-style: italic;
 }
