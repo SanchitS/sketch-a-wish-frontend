@@ -1,26 +1,26 @@
 body {
-    padding-top: 20px;
-    min-height: 667px;
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(#F19721, #823693, #0E80C3) !important;
     /*    Standard syntax*/
 }
 
 @font-face {
-    font-family: 'CooperHewitt';
+    font-family: 'CooperHewittMed';
     src: url('fonts/CooperHewitt-medium.otf');
     src: local('Cooper Hewitt medium'), local('Cooper-Hewitt-Medium'), url('fonts/CooperHewitt-Medium.otf') format('opentype');
 }
-/*bold version*/
 
 @font-face {
-    font-family: 'CooperHewitt';
+    font-family: 'CooperHewittBI';
     src: url('fonts/CooperHewitt-bolditalic.otf');
     src: local('Cooper Hewitt Bold italic'), local('Cooper-Hewitt-Bold-Italic'), url('fonts/CooperHewitt-BoldItalic.otf') format('opentype');
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'CooperHewitt';
+    font-family: 'CooperHewittSBI';
     src: url('fonts/CooperHewitt-SemiboldItalic.otf');
     src: local('Cooper Hewitt Semibold Italic'), local('Cooper-Hewitt-Semibold-Italic'), url('fonts/CooperHewitt-semiboldItalic.otf') format('opentype');
     font-weight: bold;
@@ -54,16 +54,17 @@ a {
     border-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
 }
-
+/*
 .nav_bar {
     min-height: 1.5em;
     display: table-cell;
     vertical-align: middle
 }
+*/
 
 #nav_SAW a {
     color: white !important;
-    font-family: 'CooperHewitt', sans-serif;
+    font-family: 'CooperHewittBI', sans-serif;
     font-size: 24px;
     font-weight: bold;
     padding: 0 0 0 40px;
@@ -71,21 +72,24 @@ a {
 }
 
 #explore {
-    font-family: 'CooperHewitt', sans-serif;
+    font-family: 'CooperHewittBI', sans-serif;
     float: right !important;
     margin: 0 40px 0 0;
-    margin color: white !important;
-    width: 117px;
+    color: white !important;
+    padding: 0;
+    text-align: center;
+    font-weight: 550;
+    width: 100px;
+    height: 40px;
     font-size: 24px;
     font-style: italic;
     border-width: 2px;
 }
 
-section img {
-    width: 376px !important;
+.logo img {
+    width: 330px !important;
     display: block;
     margin: 40px auto 0 auto;
-    position: inherit;
 }
 
 .get_started {
@@ -93,13 +97,13 @@ section img {
     color: #0FFF00;
     border-width: 6px;
     display: block;
-    margin: 70px auto 30px auto !important;
+    margin: 30px auto 44px auto !important;
     border-width: 6px;
-    font-family: 'CooperHewitt', sans-serif;
+    font-family: 'CooperHewittBI', sans-serif;
     font-weight: 600;
     font-style: italic;
-    font-size: 32px !important;
-    width: 300px;
+    font-size: 28px !important;
+    width: 250px;
     text-align: center;
 }
 
@@ -108,12 +112,22 @@ section img {
 .section {}
 
 .cover_name a {
-    display: inline-block;
     color: white;
+    font-family: 'CooperHewittBI', sans-serif;
+    float: right;
+    margin: 0 0 20px 0;
+    display: inline-block;
 }
 
 .cover_name a img {
     width: 30px !important;
+    display: inline-block;
+}
+
+.cover_name span {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
 }
 
 footer {
@@ -126,10 +140,36 @@ footer {
 
 footer a {
     color: white;
-    font-family: 'CooperHewitt', sans-serif;
+    font-family: 'CooperHewittMed', sans-serif;
     font-style: medium;
 }
 
+footer a:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s ease-in;
+}
+
+footer a:active {
+    color: #fff !important;
+}
+
 footer strong {
+    font-family: 'CooperHewittSBI', sans-serif;
     font-style: italic;
+}
+
+@media(max-width:500px) {
+    #nav_SAW a {
+        font-size: 8px !important;
+        float: left;
+    }
+    #explore a {
+        font-size: 18px;
+        float: right;
+    }
+    .nav_bar {}
+    .logo img {
+        width: 70% !important;
+        margin: 40px auto 30px auto;
+    }
 }
