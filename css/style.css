@@ -8,21 +8,21 @@ body {
 
 @font-face {
     font-family: 'CooperHewittMed';
-    src: url('fonts/CooperHewitt-medium.otf');
-    src: local('Cooper Hewitt medium'), local('Cooper-Hewitt-Medium'), url('fonts/CooperHewitt-Medium.otf') format('opentype');
+    src: url('../fonts/CooperHewitt-medium.otf');
+    src: local('Cooper Hewitt medium'), local('Cooper-Hewitt-Medium'), url('../fonts/CooperHewitt-Medium.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'CooperHewittBI';
-    src: url('fonts/CooperHewitt-bolditalic.otf');
-    src: local('Cooper Hewitt Bold italic'), local('Cooper-Hewitt-Bold-Italic'), url('fonts/CooperHewitt-BoldItalic.otf') format('opentype');
+    src: url('../fonts/CooperHewitt-bolditalic.otf');
+    src: local('Cooper Hewitt Bold italic'), local('Cooper-Hewitt-Bold-Italic'), url('../fonts/CooperHewitt-BoldItalic.otf') format('opentype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'CooperHewittSBI';
-    src: url('fonts/CooperHewitt-SemiboldItalic.otf');
-    src: local('Cooper Hewitt Semibold Italic'), local('Cooper-Hewitt-Semibold-Italic'), url('fonts/CooperHewitt-semiboldItalic.otf') format('opentype');
+    src: url('../fonts/CooperHewitt-SemiboldItalic.otf');
+    src: local('Cooper Hewitt Semibold Italic'), local('Cooper-Hewitt-Semibold-Italic'), url('../fonts/CooperHewitt-SemiboldItalic.otf') format('opentype');
     font-weight: bold;
 }
 
