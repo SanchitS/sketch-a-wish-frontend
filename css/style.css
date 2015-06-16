@@ -158,16 +158,29 @@ footer strong {
     font-style: italic;
 }
 
-@media(max-width:500px) {
+@media(min-width:580px) and (max-width:796px) {
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:580px) {
     #nav_SAW a {
-        font-size: 8px !important;
+        font-size: 12px !important;
         float: left;
+        padding-top: 5px;
     }
-    #explore a {
-        font-size: 18px;
+    #explore {
+        font-size: 12px;
         float: right;
+        width: 40%;
+        height: 30px;
+        padding-top: 5px;
+        text-align: center;
     }
-    .nav_bar {}
+    .nav_bar {
+        margin-bottom: 20px;
+    }
     .logo img {
         width: 70% !important;
         margin: 40px auto 30px auto;
