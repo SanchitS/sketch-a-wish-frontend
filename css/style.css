@@ -1,8 +1,30 @@
+html {
+    height: 100%;
+}
+
 body {
     padding-top: 15px;
     width: 100%;
     height: 100%;
+    background: -moz-linear-gradient(#F19721, #823693, #0E80C3) !important;
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%, #F19721), color-stop(50%, #823693), color-stop(100%, #0E80C3));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(#F19721, #823693, #0E80C3) !important;
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(#F19721, #823693, #0E80C3) !important;
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(#F19721, #823693, #0E80C3) !important;
+    /* IE10+ */
+    
     background: linear-gradient(#F19721, #823693, #0E80C3) !important;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     /*    Standard syntax*/
 }
 
@@ -67,22 +89,22 @@ a {
     font-family: 'CooperHewittBI', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    padding: 0 0 0 40px;
     font-style: italic;
+    padding: 0 0 0 40px;
 }
 
 #explore {
+    width: 100px;
+    height: 40px;
     font-family: 'CooperHewittBI', sans-serif;
+    font-weight: 550;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
     float: right !important;
     margin: 0 40px 0 0;
     color: white !important;
     padding: 0;
-    text-align: center;
-    font-weight: 550;
-    width: 100px;
-    height: 40px;
-    font-size: 24px;
-    font-style: italic;
     border-width: 2px;
 }
 
@@ -131,6 +153,10 @@ a {
 }
 
 footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: #6cf;
     padding-top: 10px;
     background-color: #2B3990;
     font-size: 1.5em;
@@ -165,19 +191,37 @@ footer strong {
 }
 
 @media(max-width:580px) {
+    body {}
     #nav_SAW a {
-        font-size: 12px !important;
+        font-size: 100% !important;
         float: left;
         padding-top: 5px;
+        padding-left: 10px;
     }
     #explore {
-        font-size: 12px;
-        float: right;
+        font-size: 120% !important;
+        float: right !important;
         width: 40%;
         height: 30px;
+        /*
         padding-top: 5px;
+padding-bottom: 5px;
+*/
+        /*        padding-left: 10%;*/
+        
+        padding: 1%;
         text-align: center;
+        /*        padding-right: 10px;*/
+        
+        margin-right: 0;
     }
+    /*
+    .get_started {
+    width: 70%;
+    font-size: 100% !important;
+}
+*/
+    
     .nav_bar {
         margin-bottom: 20px;
     }
@@ -185,4 +229,37 @@ footer strong {
         width: 70% !important;
         margin: 40px auto 30px auto;
     }
+}
+
+@media(max-width:480px) {
+    .logo img {
+        width: 80% !important;
+        margin: 40px auto 30px auto;
+    }
+    .get_started {
+        width: 50%;
+        font-size: 120% !important;
+    }
+    #nav_SAW a {
+        font-size: 90% !important;
+        float: left;
+        padding-top: 5px;
+        padding-left: 10px;
+/*        margin-left: 0;*/
+    }
+    #explore {
+        font-size: 100% !important;
+        float: right !important;
+        width: auto;
+        height: 30px;
+        padding-top: 5px;
+        text-align: center!important;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    /*
+    footer {
+    position: absolute!important;
+}
+*/
 }
