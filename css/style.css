@@ -1,50 +1,3 @@
-html {
-    height: 100%;
-}
-
-body {
-    /*    padding-top: 15px;*/
-    
-    width: 100%;
-    height: 100%;
-    background: -moz-linear-gradient(#F19721, #823693, #0E80C3) !important;
-    /* FF3.6+ */
-    
-    background: -webkit-gradient(linear, top, bottom, color-stop(0%, #F19721), color-stop(50%, #823693), color-stop(100%, #0E80C3));
-    /* Chrome,Safari4+ */
-    
-    background: -webkit-linear-gradient(#F19721, #823693, #0E80C3) !important;
-    /* Chrome10+,Safari5.1+ */
-    
-    background: -o-linear-gradient(#F19721, #823693, #0E80C3) !important;
-    /* Opera 11.10+ */
-    
-    background: -ms-linear-gradient(#F19721, #823693, #0E80C3) !important;
-    /* IE10+ */
-    
-    background: linear-gradient(#F19721, #823693, #0E80C3) !important;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /*    Standard syntax*/
-    /*    overflow: hidden;*/
-}
-
-#container {
-    min-height: 100%;
-    position: relative;
-}
-
-#header {
-    padding: 10px;
-}
-
-#body {
-    padding: 10px;
-    padding-bottom: 30px;
-    /* Height of the footer */
-}
-
 @font-face {
     font-family: 'CooperHewittMed';
     src: url('../fonts/CooperHewitt-medium.otf');
@@ -65,9 +18,64 @@ body {
     font-weight: bold;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(#F19721, #823693, #0E80C3) no-repeat center center fixed !important;
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%, #F19721), color-stop(50%, #823693), color-stop(100%, #0E80C3)) no-repeat center center fixed;
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(#F19721, #823693, #0E80C3) no-repeat center center fixed !important;
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-linear-gradient(#F19721, #823693, #0E80C3) no-repeat center center fixed !important;
+    /* Opera 11.10+ */
+    
+    background: -ms-linear-gradient(#F19721, #823693, #0E80C3) no-repeat center center fixed !important;
+    /* IE10+ */
+    
+    background: linear-gradient(#F19721, #823693, #0E80C3) no-repeat center center fixed !important;
+    margin: 0;
+    /*
+    background: no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+*/
+    /*    Standard syntax*/
+    /*    overflow: auto;*/
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#header {
+    padding: 10px;
+}
+
+#body {
+    padding-bottom: 50px;
+    /* Height of the footer */
+}
+
 a {
     text-decoration: none !important;
 }
+/*ghost buttons*/
 
 .ghost-button {
     display: inline-block;
@@ -93,6 +101,7 @@ a {
     border-color: rgba(255, 255, 255, 0.2);
     transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
 }
+/*ghost buttons css ended*/
 
 #nav_SAW a {
     color: white !important;
@@ -109,8 +118,7 @@ a {
     font-family: 'CooperHewittBI', sans-serif;
     font-weight: 550;
     font-size: 24px;
-    font-style: italic;
-    text-align: center;
+    text-align: center !important;
     float: right !important;
     margin: 0 40px 0 0;
     color: white !important;
@@ -129,7 +137,7 @@ a {
     color: #0FFF00;
     border-width: 6px;
     display: block;
-    margin: 25px auto 30px auto !important;
+    margin: 40px auto 20px auto !important;
     border-width: 6px;
     font-family: 'CooperHewittBI', sans-serif;
     font-weight: 600;
@@ -139,13 +147,15 @@ a {
     text-align: center;
 }
 
+.get_started:hover,
+.get_started:active {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: color 0.2s ease-in;
+}
+
 #LandingPageSection {}
 
 .section {}
-
-.cover_name {
-    /*    position: absolute;*/
-}
 
 .cover_name a {
     color: white;
@@ -160,6 +170,13 @@ a {
 
 .cover_name span {
     color: black;
+}
+
+.cover_name {
+    position: bottom;
+    /*    margin-bottom: 40px;*/
+    
+    margin-top: 30px;
 }
 
 #footer {
@@ -198,16 +215,8 @@ footer strong {
     font-family: 'CooperHewittSBI', sans-serif;
     font-style: italic;
 }
-/*
-@media(min-width:580px) and (max-width:796px) {
-    footer {
-        margin-top: 10px;
-    }
-}
-*/
 
 @media(max-width:580px) {
-    body {}
     #nav_SAW a {
         font-size: 100% !important;
         float: left;
@@ -219,8 +228,7 @@ footer strong {
         float: right !important;
         width: 40%;
         height: 30px;
-        /*        padding:;*/
-        
+        padding: 0;
         text-align: center;
         margin-right: 0;
     }
@@ -236,7 +244,7 @@ footer strong {
 @media(max-width:480px) {
     .logo img {
         width: 75% !important;
-        margin: 50px auto 30px auto;
+        margin: 40px auto 30px auto;
     }
     .get_started {
         width: 50%;
@@ -257,5 +265,8 @@ footer strong {
         text-align: center!important;
         padding-right: 0;
         margin-right: 0;
+    }
+    .cover_name {
+        margin: 35px 0 40px 0;
     }
 }
