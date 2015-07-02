@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'CooperHewittMed';
-    src: url('../fonts/CooperHewitt-medium.otf');
-    src: local('Cooper Hewitt medium'), local('Cooper-Hewitt-Medium'), url('../fonts/CooperHewitt-Medium.otf') format('opentype');
+    src: url('../fonts/CooperHewitt-Medium.otf');
+    src: local('Cooper Hewitt Medium'), local('Cooper-Hewitt-Medium'), url('../fonts/CooperHewitt-Medium.otf') format('opentype');
 }
 
 @font-face {
@@ -50,6 +50,57 @@ body {
 #container {
     min-height: 100%;
     position: relative;
+}
+
+#ClickGetStarted {
+    position: absolute;
+    display: none;
+    min-height: 100%;
+    min-width: 100%;
+    vertical-align: middle;
+    z-index: 1 !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.85+1,0.85+100 */
+    
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 1%, rgba(0, 0, 0, 0.85) 100%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.85)), color-stop(1%, rgba(0, 0, 0, 0.85)), color-stop(100%, rgba(0, 0, 0, 0.85)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 1%, rgba(0, 0, 0, 0.85) 100%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 1%, rgba(0, 0, 0, 0.85) 100%);
+    /* Opera 12+ */
+    
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 1%, rgba(0, 0, 0, 0.85) 100%);
+    /* IE10+ */
+    
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 1%, rgba(0, 0, 0, 0.85) 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#d9000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+#ClickGetStarted .container {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#ClickGetStarted .container h2 {
+    color: #fff;
+}
+
+#ClickGetStarted .container img {
+    width: 160px;
+    padding: 0 15px 0 15px;
+    margin-top: 20px;
 }
 
 #header {
@@ -112,6 +163,7 @@ ul li {
     font-family: 'CooperHewittBI', sans-serif;
     font-weight: 550;
     font-size: 24px;
+    vertical-align: middle;
     text-align: center !important;
     float: right !important;
     margin: 0 40px 0 0;
@@ -138,6 +190,7 @@ ul li {
     font-style: italic;
     font-size: 28px !important;
     width: 250px;
+    vertical-align: middle;
     text-align: center;
 }
 
@@ -191,7 +244,7 @@ footer {
 footer a {
     color: white;
     font-family: 'CooperHewittMed', sans-serif;
-    font-style: medium;
+    /*    font-style: medium;*/
 }
 
 footer a:hover {
@@ -207,7 +260,7 @@ footer strong {
     font-family: 'CooperHewittSBI', sans-serif;
     font-style: italic;
 }
-
+/*
 section #ClickGetStarted {
     position: fixed;
     padding: 0;
@@ -218,6 +271,7 @@ section #ClickGetStarted {
     height: 100%;
     background: rgba(255, 255, 255, 0.5);
 }
+*/
 /*make a wish css*/
 
 .makeWish_list li {

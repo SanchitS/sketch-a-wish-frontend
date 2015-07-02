@@ -16,16 +16,47 @@
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+        function showSignUpPage() {
+            var dive = document.getElementById("ClickGetStarted");
+            if (dive.style.display !== "block") {
+                dive.style.display = "block";
+            } else {
+                dive.style.display = "none";
+            }
+        }
+
+        function hideSignUpPage() {
+            var dive = document.getElementById("container");
+            if (dive.style.display !== "none") {
+                dive.style.display = "none";
+            } else {
+                dive.style.display = "block";
+            }
+        }
+    </script>
 
 </head>
 
 <body>
     <div id="container">
+        <div onclick="hideSignUpPage()" id="ClickGetStarted" class="content-section text-center">
+            <div class="container">
+                <h2> Sign Up</h2>
+                <a href="#"><img src="img/signupxyz.png">
+                </a>
+                <a href="#"><img src="img/signupxyz.png">
+                </a>
+                <a href="#"><img src="img/signupxyz.png">
+                </a>
+            </div>
+        </div>
         <div id="header">
             <header>
                 <div class="container-fluid">
@@ -54,12 +85,11 @@
                             <img src="img/SAW_logo.png" />
                         </div>
                         <div class="row">
-                            <a href="signup.html">
-                                <div class="ghost-button get_started">GET STARTED</div>
+                            <a href="#">
+                                <div class="ghost-button get_started" onclick="showSignUpPage()">GET STARTED</div>
                             </a>
                         </div>
 
-                        <!--                   <div class="clearfix visible-xs"></div>-->
                         <div class="row">
                             <div class="col-md-offset-9 col-md-3">
                                 <div class="cover_name">
@@ -85,6 +115,9 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/lightbox.js"></script>
+        <script src="js/script.js"></script>
+        <!--        <script src="js/lightbox-plus-jquery.min.js"></script>-->
     </div>
 </body>
 
