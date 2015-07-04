@@ -309,6 +309,36 @@ section #ClickGetStarted {
     color: #ebebeb;
 }
 
+#choseWishHTML {}
+
+#threeWish .container {
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#threeWish .ChooseButton {
+    display: inline-block;
+    opacity: 1;
+    border: 3px solid #fff;
+    border-radius: 0;
+}
+
+#threeWish .container h2 {
+    color: #fff;
+    padding: 6px;
+}
+
+#threeWish .container img {
+    width: 300px;
+    padding: 0;
+    margin: 20px 20px 0 20px;
+}
+
 @media(max-width:580px) {
     #nav_SAW a {
         font-size: 100% !important;
